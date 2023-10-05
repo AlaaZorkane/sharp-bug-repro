@@ -3,23 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "sst bind next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sst:deploy": "sst deploy --stage prod"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.4"
+    "@plaiceholder/next": "^3.0.0",
+    "next": "13.5.4",
+    "plaiceholder": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3"
+    "@types/react": "^18.2.10",
+    "@types/react-dom": "^18.2.10",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2",
+    "sst": "^2.26.11",
+    "aws-cdk-lib": "2.95.1",
+    "constructs": "10.2.69"
   }
 }
